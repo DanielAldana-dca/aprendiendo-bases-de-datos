@@ -1,0 +1,66 @@
+# 🛒 Proyecto 02: E-commerce
+
+Sistema completo de comercio electrónico con carrito, pedidos, pagos y envíos.
+
+## 🎯 Objetivos
+
+- Diseñar un modelo complejo con muchas relaciones
+- Implementar carrito con Redis
+- Gestionar estados de pedidos
+- Crear reportes de ventas
+- Integrar SQL + Redis
+
+## 📋 Requisitos funcionales
+
+### Catálogo
+- Productos con variantes (talla, color)
+- Categorías jerárquicas (categoría > subcategoría)
+- Búsqueda y filtros
+- Stock por variante
+
+### Usuarios
+- Registro y login
+- Direcciones de envío
+- Historial de pedidos
+- Lista de deseos
+
+### Carrito
+- Temporal (Redis)
+- Persistente entre sesiones
+- Cálculo de totales
+- Aplicación de cupones
+
+### Pedidos
+- Estados: pendiente → pagado → enviado → entregado
+- Snapshot de precios al momento de compra
+- Dirección de envío
+- Método de pago
+- Factura
+
+### Admin
+- Reportes de ventas
+- Productos más vendidos
+- Clientes top
+- Stock bajo
+
+## 🗂️ Estructura del proyecto
+
+```
+02-ecommerce/
+├── README.md           -- este archivo
+├── 01-diseno.md        -- ER, decisiones
+├── 02-schema.sql       -- DDL SQL
+├── 03-redis.md         -- diseño del carrito con Redis
+├── 04-datos-prueba.sql
+├── 05-consultas.sql    -- reportes y consultas
+└── 06-ejercicios.md
+```
+
+## 🎓 Lo que practicarás
+
+- Diseño complejo con jerarquías
+- Snapshots históricos (precios)
+- Estados y transiciones
+- Cacheo con Redis
+- Reportes analíticos
+- Window functions para rankings

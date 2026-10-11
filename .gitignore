@@ -1,0 +1,86 @@
+# ============================================
+# Bases de datos locales
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql.bak
+*.dump
+
+# ============================================
+# Configuración y secretos
+# ============================================
+.env
+.env.local
+.env.*.local
+config.local.*
+secrets.*
+*.pem
+*.key
+
+# ============================================
+# Docker
+# ============================================
+docker-compose.override.yml
+.docker/
+docker-data/
+
+# ============================================
+# Sistema operativo
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# IDEs y editores
+# ============================================
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.iml
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================
+# Dependencias (si añades scripts)
+# ============================================
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+ENV/
+
+# ============================================
+# Backups personales
+# ============================================
+backups/
+*.backup
+temp/
+tmp/
+
+# ============================================
+# Datos de prueba generados
+# ============================================
+datos-generados/
+seed-output/
